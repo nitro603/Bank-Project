@@ -384,32 +384,32 @@ Last Name | First Name |       SSN       |    Account Number    | Account Type |
    Dylan        Aquart      233984567            777777             CD              Open            $545.0          3/20/2022
      ******* Account Transactions *******
 Date            Transaction               Amount     Status   Balance
-10/13/2021      Opening new Account       $0.0       Done     $545.0     
-10/13/2021      Withdrawal                $100.0     Failed   $545.0     ERROR: invalid Withdrawal amount - Transaction voided
-10/13/2021      Deposit                   $345.0     Done     $545.0     
-10/13/2021      Withdrawal                $20.0      Failed   $545.0     ERROR: Maturity Date not Reached
-10/13/2021      Account Lookup            $0.0       Done     $545.0     
-10/13/2021      Account History Lookup    $0.0       Done     $545.0     
+10/24/2021      Opening new Account       $0.0       Done     $545.0     
+10/24/2021      Withdrawal                $100.0     Failed   $545.0     ERROR: invalid Withdrawal amount - Transaction voided
+10/24/2021      Deposit                   $345.0     Done     $545.0     
+10/24/2021      Withdrawal                $20.0      Failed   $545.0     ERROR: Maturity Date not Reached
+10/24/2021      Account Lookup            $0.0       Done     $545.0     
+10/24/2021      Account History Lookup    $0.0       Done     $545.0     
 
 Last Name | First Name |       SSN       |    Account Number    | Account Type | Account Status |    Balance    | Maturity Date
    Dylan        Aquart      233984567            938392             Checking        Open            $550.67
      ******* Account Transactions *******
 Date            Transaction               Amount     Status   Balance
-10/13/2021      Opening New Account       $0.0       Done     $550.67    
-10/13/2021      Withdrawal                $100.32    Done     $550.67    
-10/13/2021      Deposit                   $250.99    Done     $550.67    
-10/13/2021      Clear Check               $22.22     Failed   $550.67    ERROR: Post Dated Check
-10/13/2021      Account Lookup            $0.0       Done     $550.67    
-10/13/2021      Account History Lookup    $0.0       Done     $550.67    
+10/24/2021      Opening New Account       $0.0       Done     $550.67    
+10/24/2021      Withdrawal                $100.32    Done     $550.67    
+10/24/2021      Deposit                   $250.99    Done     $550.67    
+10/24/2021      Clear Check               $22.22     Failed   $550.67    ERROR: Post Dated Check
+10/24/2021      Account Lookup            $0.0       Done     $550.67    
+10/24/2021      Account History Lookup    $0.0       Done     $550.67    
 
 Last Name | First Name |       SSN       |    Account Number    | Account Type | Account Status |    Balance    | Maturity Date
    Dylan        Aquart      233984567            892019             Savings         Open            $2412.61
      ******* Account Transactions *******
 Date            Transaction               Amount     Status   Balance
-10/13/2021      Opening New Account       $0.0       Done     $2412.61   
-10/13/2021      Withdrawal                $689.89    Done     $2412.61   
-10/13/2021      Account Lookup            $0.0       Done     $2412.61   
-10/13/2021      Account History Lookup    $0.0       Done     $2412.61   
+10/24/2021      Opening New Account       $0.0       Done     $2412.61   
+10/24/2021      Withdrawal                $689.89    Done     $2412.61   
+10/24/2021      Account Lookup            $0.0       Done     $2412.61   
+10/24/2021      Account History Lookup    $0.0       Done     $2412.61   
 
 Transaction Type: Withdrawal
 Account Number: 892019

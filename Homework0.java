@@ -840,7 +840,7 @@ public class Homework0{
 		try{
 			ticket = new TransactionTicket(Calendar.getInstance(),"Account Lookup", 0, 0);
 			SSN = kybd.nextInt();
-			account = bank.getAcct(bank.findAcct(SSN));
+			account = bank.getAcct(bank.findSSN(SSN));
 			
 			receipt = new TransactionReceipt(ticket, true, "none", account.getAccBalance(), account.getAccBalance());
 			//using the numaccts method to loop through accounts searching for matches
@@ -908,7 +908,7 @@ public class Homework0{
 		try{
 			ticket = new TransactionTicket(Calendar.getInstance(), "Account History Lookup", 0,0);
 			SSN = kybd.nextInt();
-			account = new Account(bank.getAcct(bank.findAcct(SSN)));
+			account = new Account(bank.getAcct(bank.findSSN(SSN)));
 
 			receipt = new TransactionReceipt(ticket, true, "none", account.getAccBalance(), account.getAccBalance());
 		}catch(InvalidAccountException ex){

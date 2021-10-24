@@ -228,30 +228,34 @@ public class Bank {
     }
 
     public int findAcct(int identifier)throws IOException{
+
+        sortAccountsByAcctNum();
+
+        BinarySearch object = new BinarySearch(accounts);
+        Integer[] arr = new Integer[acctNumSortKey.size()];
+        arr = acctNumSortKey.toArray(arr);
+        
+        int index = object.search(arr, 0, arr.length - 1, identifier);
+        if(index == -1){
+            throw new InvalidAccountException(identifier, "Account Number ");
+        }
+
+        return index;
+    }
+
+    public int findSSN(int ssn) throws IOException{
         boolean found = false;
 
         for(int i = 0; i < accounts.size(); i++){
-            if(identifier > 10000000){
-                if(accounts.get(i).getDepositor().getSSN() == identifier){
-                    found = true;
-                    return i;
-                }
-            }else{
-                if(accounts.get(i).getAccNum() == identifier){
-                    found = true;
-                    return i;
-                } 
+            if(accounts.get(i).getDepositor().getSSN() == ssn){
+                found = true;
+                return i;
             }
         }
-
-        if(found == false && identifier > 10000000){
-            throw new InvalidAccountException(identifier, "SSN ");
-        }
         if(found == false){
-            throw new InvalidAccountException(identifier, "Account Number ");
+            throw new InvalidAccountException(ssn, "SSN ");
         }
-        return 0;
-        
+        return -1;
     }
 
     public Account getAcct(int index){
